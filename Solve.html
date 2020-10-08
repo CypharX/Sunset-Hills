@@ -79,10 +79,15 @@
         </div><br />
         <div class="row">
             <div class="col-2">
-                <button class="btn" id="sunBtn">Check View</button>
+                <button class="btn btn-dark" id="sunBtn">Check View</button>
             </div>
             <div class="col">
-                <p id="viewCheck"></p>
+                <p id="viewCheck1"></p>
+                <p id="viewCheck2"></p>
+                <p id="viewCheck3"></p>
+                <p id="viewCheck4"></p>
+                <p id="viewCheck5"></p>
+                <p id="viewCount"></p>
             </div>
         </div>
     </div>
@@ -108,13 +113,58 @@
             heightArray.push(height4);
             heightArray.push(height5);
 
-            function compareBldg() {
-                for (let i = 0; i <= 4; i++)
-                    if (heightArray[i] > heightArray[])
+            let viewArray = ['true'];
+            let viewBldg = height1;
+            let tracker = 1;
+            let trackerArray = [height1];
+
+            for (let i = 1; i <= 4; i++) {
+                if (heightArray[i] > viewBldg) {
+                    viewBldg = heightArray[i];
+                    viewArray.push('true');
+                    tracker++;
+                    trackerArray.push(heightArray[i])
+                }
+                else {
+                    viewArray.push('false')
+                }
             }
 
+            if (viewArray[0] == 'true') {
+                document.getElementById('viewCheck1').innerHTML = `Building 1 has a height of ${height1} and can see the sun`;
+            } else {
+                document.getElementById('viewCheck1').innerHTML = `Building 1 has a height of ${height1} and can not see the sun`;
+            }
 
+            if (viewArray[1] == 'true') {
+                document.getElementById('viewCheck2').innerHTML = `Building 2 has a height of ${height2} and can see the sun`;
+            } else {
+                document.getElementById('viewCheck2').innerHTML = `Building 2 has a height of ${height2} and can not see the sun`;
+            }
 
+            if (viewArray[2] == 'true') {
+                document.getElementById('viewCheck3').innerHTML = `Building 3 has a height of ${height3} and can see the sun`;
+            } else {
+                document.getElementById('viewCheck3').innerHTML = `Building 3 has a height of ${height3} and can not see the sun`;
+            }
+
+            if (viewArray[3] == 'true') {
+                document.getElementById('viewCheck4').innerHTML = `Building 4 has a height of ${height4} and can see the sun`;
+            } else {
+                document.getElementById('viewCheck4').innerHTML = `Building 4 has a height of ${height4} and can not see the sun`;
+            }
+
+            if (viewArray[4] == 'true') {
+                document.getElementById('viewCheck5').innerHTML = `Building 5 has a height of ${height5} and can see the sun`;
+            } else {
+                document.getElementById('viewCheck5').innerHTML = `Building 5 has a height of ${height5} and can see the sun`;
+            }
+
+            if (tracker == 1) {
+                document.getElementById('viewCount').innerHTML = `Only 1 building can see the sun and its height is ${height1}`
+            } else {
+                document.getElementById('viewCount').innerHTML = `A total of ${tracker} buildings can see the sun and their heights are ${trackerArray.join(', ')}`
+            }
         })
     </script>
 
