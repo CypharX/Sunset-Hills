@@ -1,14 +1,24 @@
 ﻿.bodybg {
-   color:brown, 
+    background-image: linear-gradient(to right, #FAC605, #FA4D05);
 }
 
 .gridstyle {
-    background-color: #11A843;
-    color: #f6f4f3;
-    outline: 3px solid black;
+    background-image: linear-gradient(to right, #FA4D05, #FAC605);
+    /*color: #f6f4f3;*/
+    /*outline: 3px solid black;*/
 }
 .navstyle {
-    background-color: #262322;
+    background-color: #A86506;
 }
-
+.titlestyle {
+    font-size: 8rem;
+    background: -webkit-linear-gradient(#F54B05, #2A3BF5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.substyle {
+    background: -webkit-linear-gradient(#F54B05, #2A3BF5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
