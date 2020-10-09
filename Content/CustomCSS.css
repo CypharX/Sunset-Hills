@@ -3,9 +3,7 @@
 }
 
 .gridstyle {
-    background-image: linear-gradient(to right, #FA4D05, #FAC605);
-    /*color: #f6f4f3;*/
-    /*outline: 3px solid black;*/
+    background-image: linear-gradient(to right, #FA4D05, #FAC605);   
 }
 .navstyle {
     background-color: #A86506;

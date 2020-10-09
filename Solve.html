@@ -18,7 +18,7 @@
 <body class="bodybg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <nav class="navbar navbar-expand-lg navbar-dark navstyle static-top">
         <div class="container">
             <a class="navbar-brand" href="/Index.html"><img src="Images/favicon.ico" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,17 +47,17 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- Page Content -->
-    <div class="container">
+    <div class="container gridstyle">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1 class="mt-5">The Exercise</h1>
-                <p class="lead">This page will display your JS exercise</p><hr />
-                <ul class="list-unstyled">
-                    <li>The Javascript Exercise</li>
-                    <li>Is placed on this page</li>
-                </ul>
+                <h1 class="mt-5 titlestyle">Sunset Hills</h1>
+                <p class="h1 substyle">A Javascript Coding Challenge</p><hr />
+                <ul class="list-unstyled h4">
+                    <li>Enter the height for each building and</li>
+                    <li>see which have a view of the sunset</li>
+                </ul><br />
             </div>
         </div>
         <div class="row">
@@ -79,7 +79,7 @@
         </div><br />
         <div class="row">
             <div class="col-2">
-                <button class="btn btn-dark" id="sunBtn">Check View</button>
+                <button class="btn btn-warning" id="sunBtn">Check View</button>
             </div>
             <div class="col h2">
                 <p id="viewCheck1"></p>
@@ -99,74 +99,74 @@
 
     <script src="Scripts/Solve.js"></script>
     <script>
-            //document.getElementById('sunBtn').addEventListener('click', function () {
+                //document.getElementById('sunBtn').addEventListener('click', function () {
 
-            //    let height1 = parseInt(document.getElementById('sunInput1').value);
-            //    let height2 = parseInt(document.getElementById('sunInput2').value);
-            //    let height3 = parseInt(document.getElementById('sunInput3').value);
-            //    let height4 = parseInt(document.getElementById('sunInput4').value);
-            //    let height5 = parseInt(document.getElementById('sunInput5').value);
+                //    let height1 = parseInt(document.getElementById('sunInput1').value);
+                //    let height2 = parseInt(document.getElementById('sunInput2').value);
+                //    let height3 = parseInt(document.getElementById('sunInput3').value);
+                //    let height4 = parseInt(document.getElementById('sunInput4').value);
+                //    let height5 = parseInt(document.getElementById('sunInput5').value);
 
-            //    let heightArray = new Array();
-            //    heightArray.push(height1);
-            //    heightArray.push(height2);
-            //    heightArray.push(height3);
-            //    heightArray.push(height4);
-            //    heightArray.push(height5);
+                //    let heightArray = new Array();
+                //    heightArray.push(height1);
+                //    heightArray.push(height2);
+                //    heightArray.push(height3);
+                //    heightArray.push(height4);
+                //    heightArray.push(height5);
 
-            //    let viewArray = ['true'];
-            //    let viewBldg = height1;
-            //    let tracker = 1;
-            //    let trackerArray = [height1];
+                //    let viewArray = ['true'];
+                //    let viewBldg = height1;
+                //    let tracker = 1;
+                //    let trackerArray = [height1];
 
-            //    for (let i = 1; i <= 4; i++) {
-            //        if (heightArray[i] > viewBldg) {
-            //            viewBldg = heightArray[i];
-            //            viewArray.push('true');
-            //            tracker++;
-            //            trackerArray.push(heightArray[i])
-            //        }
-            //        else {
-            //            viewArray.push('false')
-            //        }
-            //    }
+                //    for (let i = 1; i <= 4; i++) {
+                //        if (heightArray[i] > viewBldg) {
+                //            viewBldg = heightArray[i];
+                //            viewArray.push('true');
+                //            tracker++;
+                //            trackerArray.push(heightArray[i])
+                //        }
+                //        else {
+                //            viewArray.push('false')
+                //        }
+                //    }
 
-            //    if (viewArray[0] == 'true') {
-            //        document.getElementById('viewCheck1').innerHTML = `Building 1 has a height of ${height1} and can see the sun`;
-            //    } else {
-            //        document.getElementById('viewCheck1').innerHTML = `Building 1 has a height of ${height1} and can not see the sun`;
-            //    }
+                //    if (viewArray[0] == 'true') {
+                //        document.getElementById('viewCheck1').innerHTML = `Building 1 has a height of ${height1} and can see the sun`;
+                //    } else {
+                //        document.getElementById('viewCheck1').innerHTML = `Building 1 has a height of ${height1} and can not see the sun`;
+                //    }
 
-            //    if (viewArray[1] == 'true') {
-            //        document.getElementById('viewCheck2').innerHTML = `Building 2 has a height of ${height2} and can see the sun`;
-            //    } else {
-            //        document.getElementById('viewCheck2').innerHTML = `Building 2 has a height of ${height2} and can not see the sun`;
-            //    }
+                //    if (viewArray[1] == 'true') {
+                //        document.getElementById('viewCheck2').innerHTML = `Building 2 has a height of ${height2} and can see the sun`;
+                //    } else {
+                //        document.getElementById('viewCheck2').innerHTML = `Building 2 has a height of ${height2} and can not see the sun`;
+                //    }
 
-            //    if (viewArray[2] == 'true') {
-            //        document.getElementById('viewCheck3').innerHTML = `Building 3 has a height of ${height3} and can see the sun`;
-            //    } else {
-            //        document.getElementById('viewCheck3').innerHTML = `Building 3 has a height of ${height3} and can not see the sun`;
-            //    }
+                //    if (viewArray[2] == 'true') {
+                //        document.getElementById('viewCheck3').innerHTML = `Building 3 has a height of ${height3} and can see the sun`;
+                //    } else {
+                //        document.getElementById('viewCheck3').innerHTML = `Building 3 has a height of ${height3} and can not see the sun`;
+                //    }
 
-            //    if (viewArray[3] == 'true') {
-            //        document.getElementById('viewCheck4').innerHTML = `Building 4 has a height of ${height4} and can see the sun`;
-            //    } else {
-            //        document.getElementById('viewCheck4').innerHTML = `Building 4 has a height of ${height4} and can not see the sun`;
-            //    }
+                //    if (viewArray[3] == 'true') {
+                //        document.getElementById('viewCheck4').innerHTML = `Building 4 has a height of ${height4} and can see the sun`;
+                //    } else {
+                //        document.getElementById('viewCheck4').innerHTML = `Building 4 has a height of ${height4} and can not see the sun`;
+                //    }
 
-            //    if (viewArray[4] == 'true') {
-            //        document.getElementById('viewCheck5').innerHTML = `Building 5 has a height of ${height5} and can see the sun`;
-            //    } else {
-            //        document.getElementById('viewCheck5').innerHTML = `Building 5 has a height of ${height5} and can see the sun`;
-            //    }
+                //    if (viewArray[4] == 'true') {
+                //        document.getElementById('viewCheck5').innerHTML = `Building 5 has a height of ${height5} and can see the sun`;
+                //    } else {
+                //        document.getElementById('viewCheck5').innerHTML = `Building 5 has a height of ${height5} and can see the sun`;
+                //    }
 
-            //    if (tracker == 1) {
-            //        document.getElementById('viewCount').innerHTML = `Only 1 building can see the sun and its height is ${height1}`
-            //    } else {
-            //        document.getElementById('viewCount').innerHTML = `A total of ${tracker} buildings can see the sun and their heights are ${trackerArray.join(', ')}`
-            //    }
-            //})
+                //    if (tracker == 1) {
+                //        document.getElementById('viewCount').innerHTML = `Only 1 building can see the sun and its height is ${height1}`
+                //    } else {
+                //        document.getElementById('viewCount').innerHTML = `A total of ${tracker} buildings can see the sun and their heights are ${trackerArray.join(', ')}`
+                //    }
+                //})
     </script>
 
 

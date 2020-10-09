@@ -31,33 +31,33 @@
     }
 
     if (viewArray[0] == 'true') {
-        document.getElementById('viewCheck1').innerHTML = `Building 1 has a height of ${height1} and can see the sun`;
+        document.getElementById('viewCheck1').innerHTML = `<span>Building 1 has a height of ${height1} and can see the sun. </span><img src="Images/Checkmark.png" />`;
     } else {
         document.getElementById('viewCheck1').innerHTML = `Building 1 has a height of ${height1} and can not see the sun`;
     }
 
     if (viewArray[1] == 'true') {
-        document.getElementById('viewCheck2').innerHTML = `Building 2 has a height of ${height2} and can see the sun`;
+        document.getElementById('viewCheck2').innerHTML = `<span>Building 2 has a height of ${height2} and can see the sun. </span><img src="Images/Checkmark.png" />`;
     } else {
-        document.getElementById('viewCheck2').innerHTML = `Building 2 has a height of ${height2} and can not see the sun`;
+        document.getElementById('viewCheck2').innerHTML = `<span>Building 2 has a height of ${height2} and can not see the sun. </span><img src="Images/RedX.png" />`;
     }
 
     if (viewArray[2] == 'true') {
-        document.getElementById('viewCheck3').innerHTML = `Building 3 has a height of ${height3} and can see the sun`;
+        document.getElementById('viewCheck3').innerHTML = `<span>Building 3 has a height of ${height3} and can see the sun. </span><img src="Images/Checkmark.png" />`;
     } else {
-        document.getElementById('viewCheck3').innerHTML = `Building 3 has a height of ${height3} and can not see the sun`;
+        document.getElementById('viewCheck3').innerHTML = `<span>Building 3 has a height of ${height3} and can not see the sun. </span><img src="Images/RedX.png" />`;
     }
 
     if (viewArray[3] == 'true') {
-        document.getElementById('viewCheck4').innerHTML = `Building 4 has a height of ${height4} and can see the sun`;
+        document.getElementById('viewCheck4').innerHTML = `<span>Building 4 has a height of ${height4} and can see the sun. </span><img src="Images/Checkmark.png" />`;
     } else {
-        document.getElementById('viewCheck4').innerHTML = `Building 4 has a height of ${height4} and can not see the sun`;
+        document.getElementById('viewCheck4').innerHTML = `<span>Building 2 has a height of ${height4} and can not see the sun. </span><img src="Images/RedX.png" />`;
     }
 
     if (viewArray[4] == 'true') {
-        document.getElementById('viewCheck5').innerHTML = `Building 5 has a height of ${height5} and can see the sun`;
+        document.getElementById('viewCheck5').innerHTML = `<span>Building 5 has a height of ${height5} and can see the sun. </span><img src="Images/Checkmark.png" />`;
     } else {
-        document.getElementById('viewCheck5').innerHTML = `Building 5 has a height of ${height5} and can not see the sun`;
+        document.getElementById('viewCheck5').innerHTML = `<span>Building 5 has a height of ${height5} and can not see the sun. </span><img src="Images/RedX.png" />`;
     }
 
     if (tracker == 1) {
